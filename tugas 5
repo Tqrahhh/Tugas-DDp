@@ -1,0 +1,234 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP3ZliWl3qM005KoVCUSzL4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Tqrahhh/Tugas-DDp/blob/main/tugas%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "kendaraan1=[\"Inova\",\"mobil\",\"Toyota\",\"2400\"]\n",
+        "print(kendaraan1)\n",
+        "\n",
+        "kendaraan1=kendaraan1+[\"methalic\",4,500000000]\n",
+        "print(kendaraan1)\n",
+        "\n",
+        "kendaraan1.remove(\"mobil\")\n",
+        "print(kendaraan1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cm9rHY1bCXbU",
+        "outputId": "8bfa9d6d-e69b-409e-9d8c-a2b8971e01b0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Inova', 'mobil', 'Toyota', '2400']\n",
+            "['Inova', 'mobil', 'Toyota', '2400', 'methalic', 4, 500000000]\n",
+            "['Inova', 'Toyota', '2400', 'methalic', 4, 500000000]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pesan = \"\"\"\n",
+        "menu:\n",
+        "1. menghitung luas persegi\n",
+        "2. menghitung luas lingkaran\n",
+        "3. menghitung luas segitiga\n",
+        "pilih menu:\n",
+        "\"\"\"\n",
+        "pilihan=input(pesan)\n",
+        "\n",
+        "match pilihan:\n",
+        "    case \"1\":\n",
+        "        print(\"anda memasukan angka 1 untuk menghitung luas persegi\")\n",
+        "        sisi=int(input(\"masukan sisi:\"))\n",
+        "        luas=sisi*sisi\n",
+        "        print(\"luas persegi dengan sisi\",sisi,\"adalah\",luas)\n",
+        "    case \"2\":\n",
+        "        print(\"anda memasukan angka 2 untuk menghitung luas lingkaran\")\n",
+        "        jari=int(input(\"masukan jari jari:\"))\n",
+        "        luas=22/7*jari*jari\n",
+        "        print(\"luas lingkaran dengan jari\",jari,\"adalah\",luas)\n",
+        "    case \"3\":\n",
+        "        print(\"anda memasukkan angka 3 untuk menghitung luas segitiga\")\n",
+        "        alas=int(input(\"masukan alas:\"))\n",
+        "        tinggi=int(input(\"masukan tinggi:\"))\n",
+        "        luas=alas*tinggi/2\n",
+        "        print(\"luas segitiga\",luas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "odISSywzCZ7q",
+        "outputId": "651c4a41-080e-45f4-8d4f-a8e672d2be64"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "menu:\n",
+            "1. menghitung luas persegi\n",
+            "2. menghitung luas lingkaran\n",
+            "3. menghitung luas segitiga\n",
+            "pilih menu:\n",
+            "1\n",
+            "anda memasukan angka 1 untuk menghitung luas persegi\n",
+            "masukan sisi:3\n",
+            "luas persegi dengan sisi 3 adalah 9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pesan = \"\"\"\n",
+        "menu:\n",
+        "1. menghitung luas persegi\n",
+        "2. menghitung luas lingkaran\n",
+        "3. menghitung luas segitiga\n",
+        "pilih menu:\n",
+        "\"\"\"\n",
+        "pilihan=input(pesan)\n",
+        "\n",
+        "match pilihan:\n",
+        "    case \"1\":\n",
+        "        print(\"anda memasukan angka 1 untuk menghitung luas persegi\")\n",
+        "        sisi=int(input(\"masukan sisi:\"))\n",
+        "        luas=sisi*sisi\n",
+        "        print(\"luas persegi dengan sisi\",sisi,\"adalah\",luas)\n",
+        "    case \"2\":\n",
+        "        print(\"anda memasukan angka 2 untuk menghitung luas lingkaran\")\n",
+        "        jari=int(input(\"masukan jari jari:\"))\n",
+        "        luas=22/7*jari*jari\n",
+        "        print(\"luas lingkaran dengan jari\",jari,\"adalah\",luas)\n",
+        "    case \"3\":\n",
+        "        print(\"anda memasukkan angka 3 untuk menghitung luas segitiga\")\n",
+        "        alas=int(input(\"masukan alas:\"))\n",
+        "        tinggi=int(input(\"masukan tinggi:\"))\n",
+        "        luas=alas*tinggi/2\n",
+        "        print(\"luas segitiga\",luas)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KMj22_JbCiOc",
+        "outputId": "0416f12a-be9e-4555-ed99-0cf98c9135cc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "menu:\n",
+            "1. menghitung luas persegi\n",
+            "2. menghitung luas lingkaran\n",
+            "3. menghitung luas segitiga\n",
+            "pilih menu:\n",
+            "2\n",
+            "anda memasukan angka 2 untuk menghitung luas lingkaran\n",
+            "masukan jari jari:5\n",
+            "luas lingkaran dengan jari 5 adalah 78.57142857142857\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pesan = \"\"\"\n",
+        "menu:\n",
+        "1. menghitung luas persegi\n",
+        "2. menghitung luas lingkaran\n",
+        "3. menghitung luas segitiga\n",
+        "pilih menu:\n",
+        "\"\"\"\n",
+        "pilihan=input(pesan)\n",
+        "\n",
+        "match pilihan:\n",
+        "    case \"1\":\n",
+        "        print(\"anda memasukan angka 1 untuk menghitung luas persegi\")\n",
+        "        sisi=int(input(\"masukan sisi:\"))\n",
+        "        luas=sisi*sisi\n",
+        "        print(\"luas persegi dengan sisi\",sisi,\"adalah\",luas)\n",
+        "    case \"2\":\n",
+        "        print(\"anda memasukan angka 2 untuk menghitung luas lingkaran\")\n",
+        "        jari=int(input(\"masukan jari jari:\"))\n",
+        "        luas=22/7*jari*jari\n",
+        "        print(\"luas lingkaran dengan jari\",jari,\"adalah\",luas)\n",
+        "    case \"3\":\n",
+        "        print(\"anda memasukkan angka 3 untuk menghitung luas segitiga\")\n",
+        "        alas=int(input(\"masukan alas:\"))\n",
+        "        tinggi=int(input(\"masukan tinggi:\"))\n",
+        "        luas=alas*tinggi/2\n",
+        "        print(\"luas segitiga\",luas)"
+      ],
+      "metadata": {
+        "id": "v7iU9xfkClhF",
+        "outputId": "0b6c5805-80ba-4704-aeeb-26baccf48a8e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "menu:\n",
+            "1. menghitung luas persegi\n",
+            "2. menghitung luas lingkaran\n",
+            "3. menghitung luas segitiga\n",
+            "pilih menu:\n",
+            "3\n",
+            "anda memasukkan angka 3 untuk menghitung luas segitiga\n",
+            "masukan alas:4\n",
+            "masukan tinggi:5\n",
+            "luas segitiga 10.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
